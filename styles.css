@@ -1,0 +1,486 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer stays at the bottom */
+}
+
+
+/* Hero Section */
+#hero {
+    background-image: url('assets/hero-image.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+#hero .hero-content {
+    background-color: rgba(57, 16, 112, 0.425); /* Semi-transparent overlay for readability */
+    padding: 40px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #362b638e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #320b66;
+}
+
+/* Services Section */
+#services {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2rem;
+    color: #190b578a;
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #ad9fd4;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: #190b578a;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+
+/* Header Section Styling */
+header {
+    background-color: #190b578a;
+    color: white;
+    padding: 10px 20px;
+    position: relative; /* Make header position relative to contain the logo */
+    height: 130px;
+}
+
+/* Logo Styling - Positioned in the upper left corner */
+header .logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+header .logo img {
+    width: 140px; /* Adjust the logo size as needed */
+    height: 130px;
+}
+
+/* Navigation Links */
+nav {
+    margin-top: 50px;
+    text-align: center; /* Center align nav links */
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+/* Footer Section Styling */
+footer {
+    background-color: #190b578a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+#products h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;  /* Space below the title */
+    color: #100a2c63;  /* Light color for the title */
+}
+
+/* Product List */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centers the product list */
+}
+
+/* Individual Product Item */
+.product-item {
+    background-color: #362b638e;
+    padding: 20px;
+    margin: 10px;
+    width: 250px; /* Wider product box for better visibility */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Product Title Styling */
+.product-item h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Product Description Styling */
+.product-item p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Product Image Styling */
+.product-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;  /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;  /* Space between image and text */
+}
+
+/* Buttons - Add to Cart & Buy Now */
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Button - Add to Cart */
+.add-to-cart {
+    background-color: #090b6b70;
+}
+
+.add-to-cart:hover {
+    background-color: #523bd3;
+}
+
+/* Button - Buy Now */
+.buy-now {
+    background-color: #af120cab;
+}
+
+.buy-now:hover {
+    background-color: #df3832;
+}
+
+/* About Section Styling */
+#about {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ad9fd4;
+}
+
+/* About Content */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* About Text Box Styling */
+.about-text-box {
+    background-color: #ad9fd4;
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* About Image Styling */
+.about-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* About Video Styling */
+.about-video iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Video Box Styling */
+.video-box {
+    background-color: #362b638e;  /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;  /* Center the box */
+    max-width: 600px;  /* Max width to prevent the box from being too wide */
+}
+
+/* Adjust video styling within the box */
+.video-box video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Contact Page Styling */
+#contact {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #362b638e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#contact h4 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    
+}
+#contact p {
+    font-size: 1.1rem;
+    color: #362b638e;
+    margin-bottom: 30px;
+}
+
+/* Contact Details Section */
+.contact-details {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-details h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+/* Contact Form Section */
+.contact-form h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #583ca5b6;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #583ca5b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #583ca5b6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Header layout adjustments for mobile */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Reduce logo size for mobile */
+    header .logo img {
+        width: 80px;
+    }
+
+    /* Stack navigation links vertically */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    /* Product items layout for smaller screens */
+    #product-list {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    /* Adjust product item width for mobile */
+    .product-item {
+        width: 100%; /* Takes full width on mobile */
+        margin: 10px 0;
+    }
+
+    /* Adjust about text box padding on mobile */
+    .about-text-box {
+        padding: 20px;
+    }
+}
